@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
-     
+
+
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="//code.jquery.com/jquery.js"></script>
@@ -14,16 +14,43 @@
 </head>
 
 <body>
-    <div ng-app ng-init="ref='ABD-23';quant=2;prix=2.20"  >
-        Votre article ref : {{ref}} au prix de {{prix}}€ a ete ajouté au panier pour un total de {{quant * prix | currency : '&euro;' : 3 }}
-        <br/>
-        <hr/>
-        Reference du produit :
-        <input type="text" name="ref" id="ref" ng-model="ref" />
+    <div ng-app="app">
+        <!-- restricted E ==> element -->
+        <nav-bar></nav-bar>
+        <div class="unproduit" ng-controller="produitctrl as produit">
+            <form action="" method="POST" role="form">
+                <legend>Edition produit</legend>
+                <div class="form-group">
+                    <label for="input-titre">Titre produit</label>
+                    <input ng-model="produit.titre" type="text" class="form-control" id="input-titre"
+                        placeholder="Input field">
+                </div>
+                <div class="form-group">
+                    <label for="input-image">image produit</label>
+                    <input ng-model="produit.image" type="text" class="form-control" id="input-image"
+                        placeholder="Input field">
+                    <img ng-src="{{produit.image}}" style="height:200px;max-width:200px;size:auto">
+                </div>
+                <div class="form-group">
+                    <label for="input-prix">Prix produit</label>
+                    <input ng-model="produit.prix" type="number" class="form-control" id="input-prix"
+                        placeholder="Input field">
+                </div>
+                <div class="form-group">
+                    <label for="textarea-desc">Description produit</label><br />
+                    <textarea ng-model="produit.desc" id="textarea-desc" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            {{produit|json}}
+        </div>
     </div>
-    
+
     <!-- liste des script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.0/angular.js"></script>
+    <script src="/App/App.js"></script>
+    <script src="/App/produitctrl/produitctrl.js"></script>
+    <script src="/App/directive/navbar/navbar.js"></script>
 </body>
 
 </html>
