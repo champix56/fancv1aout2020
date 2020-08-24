@@ -11,17 +11,18 @@
     <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="//code.jquery.com/jquery.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    
-
-   
-    
 </head>
 
 <body>
     <div ng-app ng-init="ref='ABD-23';quant=2;prix=2.20"  >
         Votre article ref : {{ref}} au prix de {{prix}}€ a ete ajouté au panier pour un total de {{quant * prix | currency : '&euro;' : 3 }}
+        <br/>
+        <hr/>
+        Reference du produit :
+        <input type="text" name="ref" id="ref" ng-model="ref" />
     </div>
-
+    
+    <!-- liste des script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.0/angular.js"></script>
 </body>
 
