@@ -1,65 +1,65 @@
 {
-    "produits": [
-      {
-        "id": 1,
-        "titre": "beurre paysan breton rouge",
-        "description": "Excelent beurre battu a la main avec 5% de cristaux de sel de guerande",
-        "prix": 2.2554,
-        "img": "img/paysanrouge.jpg",
-        "masse": "250g"
-      },
-      {
-        "id": 2,
-        "titre": "beurre paysan breton bleu",
-        "description": "Excelent beurre doux avec seulement 2.5% de cristaux de sel",
-        "prix": 2.178,
-        "img": "img/paysanbleu.jpg",
-        "masse": "250g"
-      },
-      {
-        "id": 4,
-        "titre": "Cidre doux",
-        "description": "Excelent cidre doux breton fabriqué dans le respect des traditions bretonnes",
-        "prix": 1.178,
-        "img": "img/doux.jpg",
-        "volume": "75cl"
-      },
-      {
-        "id": 5,
-        "titre": "Cidre doux",
-        "description": "tres mauvais cidre normand amere et inbuvable, mais tres dicount",
-        "prix": 0.1507,
-        "img": "img/brut.jpg",
-        "volume": "75cl"
-      },
-      {
-        "titre": "cochon complet a fest noz",
-        "description": "Excellent cochon breton de qualité, élevé en bretagne par des fermiers consciencieux",
-        "prix": 354,
-        "img": "img/porc.jpg",
-        "masse": "280kg env",
-        "id": 6
-      },
-      {
-        "id": 58,
-        "titre": "cochon complet a fest noz",
-        "description": "Excellent cochon breton de qualité, élevé en bretagne par des fermiers consciencieux",
-        "prix": 354,
-        "img": "img/porc.jpg",
-        "masse": "280kg env"
-      },
-      {
-        "titre": "cochon vivant",
-        "description": "Excellent cochon breton de qualité, élevé en bretagne par des fermiers consciencieux",
-        "prix": 100,
-        "img": "img/porc.jpg",
-        "masse": "280kg env",
-        "id": 59
-      }
-    ],
-    "boutique": {
-      "adresse": "54 Place du port",
-      "cp": "56000",
-      "ville": "vannes"
+  "produits": [
+    {
+      "id": 1,
+      "titre": "beurre paysan breton rouge",
+      "desc": "Excelent beurre battu a la main avec 5% de cristaux de sel de guerande",
+      "prix": 2.2554,
+      "image": "paysanrouge.jpg",
+      "masse": "250g"
+    },
+    {
+      "id": 2,
+      "titre": "beurre paysan breton bleu",
+      "desc": "Excelent beurre doux avec seulement 2.5% de cristaux de sel",
+      "prix": 2.178,
+      "image": "paysanbleu.jpg",
+      "masse": "250g"
+    },
+    {
+      "id": 4,
+      "titre": "Cidre doux",
+      "desc": "Excelent cidre doux breton fabriqué dans le respect des traditions bretonnes",
+      "prix": 1.178,
+      "image": "doux.jpg",
+      "volume": "75cl"
+    },
+    {
+      "id": 5,
+      "titre": "Cidre doux",
+      "desc": "tres mauvais cidre normand amere et inbuvable, mais tres dicount",
+      "prix": 0.1507,
+      "image": "brut.jpg",
+      "volume": "75cl"
+    },
+    {
+      "titre": "cochon complet a fest noz",
+      "desc": "Excellent cochon breton de qualité, élevé en bretagne par des fermiers consciencieux",
+      "prix": 354,
+      "image": "porc.jpg",
+      "masse": "280kg env",
+      "id": 6
+    },
+    {
+      "id": 58,
+      "titre": "cochon complet a fest noz",
+      "desc": "Excellent cochon breton de qualité, élevé en bretagne par des fermiers consciencieux",
+      "prix": 354,
+      "image": "porc.jpg",
+      "masse": "280kg env"
+    },
+    {
+      "titre": "cochon vivant",
+      "desc": "Excellent cochon breton de qualité, élevé en bretagne par des fermiers consciencieux",
+      "prix": 100,
+      "image": "porc.jpg",
+      "masse": "280kg env",
+      "id": 59
     }
+  ],
+  "boutique": {
+    "adresse": "54 Place du port",
+    "cp": "56000",
+    "ville": "vannes"
   }
+}
