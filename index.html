@@ -17,6 +17,7 @@
     <div ng-app="app">
         <!-- restricted E ==> element -->
         <nav-bar></nav-bar>
+        <panier></panier>
         <div class="unproduit" ng-controller="produitctrl as produit">
             <form action="" method="POST" role="form">
                 <legend>Edition produit</legend>
@@ -33,7 +34,7 @@
                 </div>
                 <div class="form-group">
                     <label for="input-prix">Prix produit</label>
-                    <input ng-model="produit.prix" type="number" class="form-control" id="input-prix"
+                    <input ng-model="produit.prix" type="number" step="0.01" class="form-control" id="input-prix"
                         placeholder="Input field">
                 </div>
                 <div class="form-group">
@@ -49,8 +50,10 @@
     <!-- liste des script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.0/angular.js"></script>
     <script src="/App/App.js"></script>
+    <script src="/App/filter/myCurrency/myCurrency.js"></script>
     <script src="/App/produitctrl/produitctrl.js"></script>
     <script src="/App/directive/navbar/navbar.js"></script>
+    <script src="/App/directive/panier/panier.js"></script>
 </body>
 
 </html>
