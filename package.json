@@ -1,0 +1,26 @@
+{
+  "name": "fancv1aout2020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"npm run lite|npm run json",
+    "lite":"lite-server",
+    "json":"json-server -p 2956 db.json"
+  },
+  "dependencies": {
+    "json-server": "^0.16.1",
+    "lite-server": "^2.5.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/champix56/fancv1aout2020.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/champix56/fancv1aout2020/issues"
+  },
+  "homepage": "https://github.com/champix56/fancv1aout2020#readme"
+}
