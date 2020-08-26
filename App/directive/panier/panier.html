@@ -13,14 +13,14 @@
     </tr>
     <tr>
         <td colspan="2">Sous-total</td>
-        <td>9.00€</td>
+        <td>9.88855€</td>
     </tr>
     <tr>
         <td colspan="2">T.V.A (20%)</td>
-        <td>{{9.88855 | myround | tva : 19.6 | myround }}</td>
+        <td>{{9.88855  | tva : 19.6  | mycurrency }}</td>
     </tr>
     <tr>
         <td colspan="2">Total T.T.C</td>
-        <td>10.80€</td>
+        <td>{{9.88855  | ttc : 19.6  |mycurrency}}</td>
     </tr>
 </table>
