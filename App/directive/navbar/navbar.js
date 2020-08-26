@@ -1,9 +1,8 @@
-(function() {
+// (function() {
     'use strict';
-
     angular
         .module('moduleNavBar',[])
-        .directive('navBar', Directive);
+        .directive('navBar', Directive)
 
     // Directive.$inject = ['dependency1'];
     function Directive() {
@@ -20,4 +19,4 @@
         };
         return directive;
     } 
-})();
+// })();
